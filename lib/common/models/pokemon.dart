@@ -10,8 +10,7 @@ class Pokemon {
   final List<Pokemon> evolutions = [];
 
   Color? get baseColor => _color(type: types[0]);
-  String get image =>
-      'https://raw.githubusercontent.com/fanzeyi/pokemon.json/master/images/$number.png';
+  String get image => 'https://raw.githubusercontent.com/fanzeyi/pokemon.json/master/images/$number.png';
 
   static List<String> getFromJSON(Map<String, dynamic> json, String field) {
     final List fieldList =
